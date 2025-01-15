@@ -10,10 +10,6 @@ function onclick() {
     buttonAnimation(buttonInnerHTML)
 }
 
-
-
-
-
 document.addEventListener("keypress", function(event) {
     makeSound(event.key);
     buttonAnimation(event.key);
@@ -53,7 +49,6 @@ function makeSound(key) {
         default: console.log(buttonInnerHTML);
     }
 }
-
 
 function buttonAnimation(currentKey) {
     var activeButton = document.querySelector("." + currentKey);
